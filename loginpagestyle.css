@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: #e2e8f0;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  overflow: auto;
+}
+.login-container {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: none;
+  border-radius: 24px;
+  padding: 32px 16px;
+  width: auto;    
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+  animation: slideUp 0.8s ease-out;
+  margin: 40px 60px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.logo {
+  text-align: center;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 1;
+}
+.logo h1 {
+  font-size: 32px;
+  font-weight: 700;
+  background: rgb(17, 89, 255);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+.logo p {
+  color: #4651637a;
+  font-size: 16px;
+  font-weight: 500;
+}
+.form-group {
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+}
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+.form-row .form-group {
+  flex: 1;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #374151;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+}
+input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 16px;
+  color: #1e293b;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+input::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+input:focus {
+  outline: none;
+  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1), 0 4px 12px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transform: translateY(-1px);
+}
+.login-button {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(30, 41, 59, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  margin-top: 8px;
+}
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(30, 41, 59, 0.4), 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.login-button:active {
+  transform: translateY(0);
+}
+.divider {
+  text-align: center;
+  margin: 32px 0;
+  position: relative;
+  z-index: 1;
+}
+.divider span {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0 16px;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+}
+.signup-link {
+  text-align: center;
+  margin-top: 24px;
+  position: relative;
+  z-index: 1;
+}
+.signup-link p {
+  color: #64748b;
+  font-size: 14px;
+}
+.signup-link a {
+  color: #1e293b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.signup-link a:hover {
+  color: #6366f1;
+}
